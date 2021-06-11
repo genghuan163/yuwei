@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- 指定父pom, 在父pom中配置子模块的公共依赖 -->
+    <parent>
+        <groupId>com.lfd.yunwei</groupId>
+        <artifactId>lfd-yunwei</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <!-- 当前项目/模块的坐标, groupId从父模块中继承 -->
+    <artifactId>yunwei-user</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>yunwei-user-api</module>
+        <module>yunwei-user-service</module>
+    </modules>
+</project>
